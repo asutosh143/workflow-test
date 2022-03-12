@@ -1,21 +1,8 @@
-name : Shell comands
-
-on : [push]
-
-jobs : 
-  run-shell-command:
-    runs-on : ubuntu-latest
-    steps:
-      -  name : echo a string 
-         run : echo "Hello world"
-
-      - name: multiline script
-        run : |
-          node -v
-          npm -v
-      - name : python command
-        run : |
-          import platfrom
-          print
-          (platfrom.processor())
-        shell: python
+name : "Asutosh"
+age : 21
+academics :
+  class : 8th
+  sec : a
+  school : 
+    name : "ssvm"
+    location : "nabrangpur"
