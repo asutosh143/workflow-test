@@ -1,12 +1,7 @@
 name : Actions workflow
 
 on : 
-<<<<<<< HEAD
-  #schedule:
-   # - cron : "0/5 * * * *"
-   # - cron:  "0/6 * * * *"
-=======
->>>>>>> 46d022964fd34003a2325cbc95813e0c6e1edc30
+
   repository_dispatch:
     types: [build]
   pull_request:
@@ -18,11 +13,6 @@ jobs:
     steps:
       - name: payload
         run : echo ${{github.event.client_payload.env}}
-<<<<<<< HEAD
-
-=======
-        
->>>>>>> 46d022964fd34003a2325cbc95813e0c6e1edc30
       - name: List files
         run : |
           pwd
