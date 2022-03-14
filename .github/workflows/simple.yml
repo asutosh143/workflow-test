@@ -1,7 +1,7 @@
 
 name : Shell comands
 
-on : [push, pull_request]
+on : [push]
 
 jobs : 
   run-shell-command:
