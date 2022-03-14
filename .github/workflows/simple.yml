@@ -1,26 +1,4 @@
 
-name : Shell commands
-
-on : [push]
-
-jobs : 
-  run-shell-command:
-    runs-on : ubuntu-latest
-    steps:
-      -  name : echo a string 
-         run : echo "Hello world"
-
-      - name: multiline script
-        run : |
-          node -v
-          npm -v
-      - name : python command
-        run : |
-          import platfrom
-          print
-          (platfrom.processor())
-        shell: python
-=======
 name : Shell comands
 
 on : [push]
@@ -51,4 +29,4 @@ jobs :
       - name: Directory bash
         run : pwd
         shell:  bash
->>>>>>> 102590a8a906af02487037acbd80efd7bb1c9b87
+
